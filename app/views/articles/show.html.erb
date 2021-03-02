@@ -1,0 +1,12 @@
+
+<h1>Articles SHOW</h1>
+<p><%= @article.title %> - <%= @article.content %> </p>
+<p><%= link_to edit_article_path(@article) do %>update <i class='fas fa-pencil-alt'></i><% end %></p>
+<p> <%= link_to "Delete ",
+              article_path(@article),
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
+
+
+
+<%= link_to("Go Back to List", articles_path) %>

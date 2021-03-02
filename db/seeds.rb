@@ -10,12 +10,12 @@
   # movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
   # Character.create(name: 'Luke', movie: movies.first)
 
-
+Article.destroy_all
 
 10.times do
   article = Article.new(
-    title:    "Faker::Cannabis.title",
-    content: "Faker::ChuckNorris.content",
+    title:    Faker::Games::Pokemon.name,
+    content: Faker::ChuckNorris.fact,
   )
   article.save!
 end

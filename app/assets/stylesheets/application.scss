@@ -1,7 +1,7 @@
-// Place all the styles related to the Articles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
 @import "bootstrap/scss/bootstrap";
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
+
 
 .navbar-brand {
   align-content: left;
@@ -18,7 +18,7 @@ a {
 
 article{
 
-  font-family: "Roboto sans-serif";
+  font-family: "Arial sans-serif";
   font-weight: 400;
 }
 
